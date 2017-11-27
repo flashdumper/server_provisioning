@@ -1,0 +1,7 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: provisioning physical server 
+      debug:
+        msg: "Provisioning physical Server over IPMI"
+      when: IPMI_IP == True
