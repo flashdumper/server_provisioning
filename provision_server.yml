@@ -5,3 +5,4 @@
       debug:
         msg: "Provisioning physical Server over IPMI"
       when: IPMI_IP == True
+      failed_when: IPMI_IP == False
